@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esquema de Fútbol de 11 Ideal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #32a852;
+        }
+        .field {
+            width: 60%;
+            height: 80vh;
+            background-color: #66bb6a;
+            border: 2px solid #fff;
+            border-radius: 10px;
+            position: relative;
+            display: grid;
+            grid-template-rows: repeat(6, 1fr);
+            grid-template-columns: repeat(3, 1fr);
+            padding: 20px;
+        }
+        .player {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="field">
+        <!-- Portero -->
+        <div class="player" style="grid-column: 2; grid-row: 6;">Andry (Portero)</div>
+
+        <!-- Defensas -->
+        <div class="player" style="grid-column: 1; grid-row: 5;">Nahuelito (Lateral)</div>
+        <div class="player" style="grid-column: 2; grid-row: 5;">Franco (DFC)</div>
+        <div class="player" style="grid-column: 3; grid-row: 5;">Guzman (DFC)</div>
+        <div class="player" style="grid-column: 3; grid-row: 4;">Valen (Lateral)</div>
+
+        <!-- Mediocampistas -->
+        <div class="player" style="grid-column: 1; grid-row: 3;">Ariel (MCI)</div>
+        <div class="player" style="grid-column: 2; grid-row: 3;">Mati (MCO)</div>
+        <div class="player" style="grid-column: 3; grid-row: 3;">Lauti (MCD)</div>
+
+        <!-- Delantero -->
+        <div class="player" style="grid-column: 2; grid-row: 2;">Juanpi (DL)</div>
+    </div>
+
+</body>
+</html>
